@@ -1,0 +1,6 @@
+
+/* ----------- control the opacity of the HTML color backgrounds */
+
+@mixin mutebg( $color ) {
+  background-color: rgba( $color, .75 );
+}

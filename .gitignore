@@ -1,0 +1,11 @@
+# root level
+Thumbs.db
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+*.sass-cache
+*.settings
+
+# nitty-gritty
+/dist
+/node_modules

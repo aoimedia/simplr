@@ -1,0 +1,17 @@
+
+/* ----------- add borders for debugging */
+
+.container,
+.wrap,
+.wrap--single,
+.grid,
+[class*="grid__col--"],
+.content,
+.content--flush { border-collapse: collapse !important; }
+
+//.container { border: 1px solid red; }
+//.wrap { border: 1px solid red; }
+//.wrap--single { border: 1px solid red; }
+//.grid { border: 1px solid red; }
+//[class*="grid__col--"] { border: 1px solid red; }
+.content { border: 1px solid red; }

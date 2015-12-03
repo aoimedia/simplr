@@ -1,10 +1,10 @@
-/* ----------- grid variables */
+/* ----------- Variables */
 /* mobile options
 $container-pad-tablet: 0 ($baseline * .75);
 $container-pad-mobile: 0 ($baseline * .5);
 */
-/* ----------- control the opacity of the HTML color backgrounds */
-/* ----------- html5 reset */
+/* ----------- Mixins */
+/* ----------- HTML5 Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -35,7 +35,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* ----------- base */
+/* ----------- Base */
 html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -56,7 +56,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #666;
+  background-color: white;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5em;
@@ -64,18 +64,19 @@ body {
   font-weight: 400;
   text-align: center; }
 
-/* ----------- type */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+/* ----------- Type */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.025em;
   line-height: 1.35em;
-  margin: 0 0 .5rem 0; }
+  margin: 0 0 0.5rem 0; }
 
 h1 {
   font-size: 40px;
@@ -101,14 +102,14 @@ h6 {
   font-size: 16px;
   font-size: 1rem; }
 
-h5 {
-  text-transform: uppercase; }
-
+h5,
 h6 {
   text-transform: uppercase; }
 
-p {
-  font-size: 1.125rem; }
+p,
+li,
+td {
+  font-size: 1rem; }
 
 a {
   font-family: inherit;
@@ -120,15 +121,7 @@ a {
   cursor: pointer;
   color: inherit; }
 
-.meta__date {
-  text-transform: uppercase;
-  font-size: .85rem;
-  line-height: 1em;
-  margin-bottom: 10px;
-  color: white; }
-
-/* Grid
---------------------------------- */
+/* ----------- Grid */
 .cf:before, .container:before, .wrap:before, .wrap--single:before, .grid:before,
 .cf:after,
 .container:after,
@@ -160,8 +153,10 @@ a {
   max-width: 800px;
   padding: 1rem 0; }
 
-/* ----------- (slightly modified) joshnh grid */
-/* http://joshnh.com/weblog/creating-lightweight-grid-system/ */
+/*
+(slightly modified) joshnh grid
+credit: http://joshnh.com/weblog/creating-lightweight-grid-system/ 
+*/
 .grid {
   width: 100%; }
 
@@ -227,54 +222,3 @@ a {
   //background-color: hsla(0,0%,0%,.4);
 }
 */
-/* use the mrmrs colors and mute them with a mixin */
-.bg-navy {
-  background-color: rgba(0, 31, 63, 0.75); }
-
-.bg-blue {
-  background-color: rgba(0, 116, 217, 0.75); }
-
-.bg-aqua {
-  background-color: rgba(127, 219, 255, 0.75); }
-
-.bg-teal {
-  background-color: rgba(57, 204, 204, 0.75); }
-
-.bg-olive {
-  background-color: rgba(61, 153, 112, 0.75); }
-
-.bg-green {
-  background-color: rgba(46, 204, 64, 0.75); }
-
-.bg-lime {
-  background-color: rgba(1, 255, 112, 0.75); }
-
-.bg-yellow {
-  background-color: rgba(255, 220, 0, 0.75); }
-
-.bg-orange {
-  background-color: rgba(255, 133, 27, 0.75); }
-
-.bg-red {
-  background-color: rgba(255, 65, 54, 0.75); }
-
-.bg-maroon {
-  background-color: rgba(133, 20, 75, 0.75); }
-
-.bg-fuchsia {
-  background-color: rgba(240, 18, 190, 0.75); }
-
-.bg-purple {
-  background-color: rgba(177, 13, 201, 0.75); }
-
-.bg-black {
-  background-color: rgba(17, 17, 17, 0.75); }
-
-.bg-gray {
-  background-color: rgba(170, 170, 170, 0.75); }
-
-.bg-silver {
-  background-color: rgba(221, 221, 221, 0.75); }
-
-[class*="bg-"] h1 {
-  color: #fff !important; }

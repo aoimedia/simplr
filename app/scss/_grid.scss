@@ -1,5 +1,7 @@
-/* Grid
---------------------------------- */
+
+/* ----------- Grid */
+
+// containers
 
 .cf {}
 .cf:before,
@@ -30,12 +32,14 @@
 
 .wrap--single { 
   @extend .wrap;
-  max-width: 800px;
+  max-width: $wrap-single-max-width;
   padding: $baseline 0;
 }
 
-/* ----------- (slightly modified) joshnh grid */
-/* http://joshnh.com/weblog/creating-lightweight-grid-system/ */
+/*
+(slightly modified) joshnh grid
+credit: http://joshnh.com/weblog/creating-lightweight-grid-system/ 
+*/
 
 .grid {
   width: 100%;
@@ -51,7 +55,9 @@
   padding: $baseline 0;
 }
 
-@media (min-width: $min-width) {
+// The multi-column grid only applies above our min-width
+
+@media (min-width: $grid-min-width) {
 
   [class*="grid__col--"] {
     display: inline-block;
@@ -63,7 +69,8 @@
     }
   }
 
-  // I added this for 3-colum splits:
+  // I added this for 3-colum splits
+
   .grid__col--333 {
     width: 33.333333333%;
   }

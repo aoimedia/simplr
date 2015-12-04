@@ -1,0 +1,26 @@
+
+/* ----------- Customizations */
+
+// ----------- Some .cmbox customizations
+
+/*
+Customize the .grid__col-- div slightly if there's a .cmbox inside of it, 
+to help with vertical middle-alignment
+*/
+
+.grid__col--cmbox {
+  vertical-align: middle !important;
+}
+
+// no left-right padding at all on content divs inside a cmbox module
+.grid__col--cmbox .content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// The intro message
+
+.cmbox__intro-title,
+.cmbox__intro-subtitle { 
+  margin: 6rem auto;
+}

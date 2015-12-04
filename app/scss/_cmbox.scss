@@ -1,0 +1,24 @@
+
+/* ----------- Center-aligned & Middle-aligned content box */
+
+// the holder
+
+.cmbox {
+  width: 100%;
+  display: table;
+  text-align: center;
+  background-color: $cmbox-default-background;
+  padding: $cmbox-default-padding;
+  margin: $cmbox-default-margin;
+  //border: 1px solid green;
+}
+
+// the content
+
+.cmbox__content {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  //border: 1px solid red;
+}

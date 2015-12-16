@@ -1,5 +1,6 @@
-
-/* ----------- Customizations */
+/**
+ * Customizations
+ */
 
 // ----------- Some .cmbox customizations
 
@@ -22,5 +23,12 @@ to help with vertical middle-alignment
 
 .cmbox__intro-title,
 .cmbox__intro-subtitle { 
-  margin: 6rem auto;
+  margin: 8rem auto;
+
+  @media all and (max-width: $grid-min-width){
+    margin: 0 auto;
+  }
+
 }
+
+// ----------- Add more customizations here

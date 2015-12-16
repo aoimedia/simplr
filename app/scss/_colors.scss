@@ -1,6 +1,12 @@
+/**
+ * Colors
+ */
 
 /* 
-mrmrs web colors and mute them with a mixin 
+Just for fun, we're adding the mrmrs accessible web colors:
+Credit: https://github.com/mrmrs/colors
+And the option to mute them with a mixin, just to dial down the value slightly 
+( NOTE: this, of course, affects accessibility, so use the mixin wisely )
 */
 
 .bg-navy    { @include mutebg( #001f3f ); }

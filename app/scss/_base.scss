@@ -1,5 +1,6 @@
-
-/* ----------- Base */
+/**
+ * Base
+ */
 
 // global border-box setting
 
@@ -28,7 +29,7 @@ body {
   margin: 0; 
   padding: 0; 
   color: $base-color;
-  background-color: white;
+  background-color: $base-background-color;
   font-family: $base-font-family;
   font-size: 100%; 
   line-height: $base-line-height;

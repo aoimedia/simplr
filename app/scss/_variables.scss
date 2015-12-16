@@ -1,11 +1,18 @@
-
-/* ----------- Variables */
-
+/**
+ * Variables
+ */
 
 // ----------- base.scss
 
 $html-font-size: 16px;
 $baseline: 1rem;
+
+// This light grey BG works with the mutebg mixin
+// to adjust the value of color BGs.
+// .container BG must be set to white, so all page "body"
+// area will be white.
+
+$base-background-color: #999;
 
 // Google fonts used: Lato: 400/700
 
@@ -61,5 +68,4 @@ $container-pad-mobile: 0 ($baseline * .5);
 
 $cmbox-default-background: transparent;
 $cmbox-default-padding: 0;
-$cmbox-default-margin: 4rem auto;
-
+$cmbox-default-margin: 2rem auto;

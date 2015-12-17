@@ -1,6 +1,6 @@
 #simplr
 
-View this project at: (link: http://simplr.elmnt.com text: simplr.elmnt.com)
+View this project at: http://simplr.elmnt.com
 
 ####A float-free, responsive boilerplate with an emphasis on clean, harmonious typography.
 

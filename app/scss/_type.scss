@@ -43,5 +43,26 @@ a {
   letter-spacing: inherit;
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
+  color: $link-color;
+
+  &:visited {
+    color: $link-color;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($link-color, 30%);
+    text-decoration: none;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+

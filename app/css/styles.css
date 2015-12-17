@@ -1,16 +1,16 @@
 /**
- * Variables
- */
-/* mobile options
-$container-pad-tablet: 0 ($baseline * .75);
-$container-pad-mobile: 0 ($baseline * .5);
-*/
-/**
  * Mixins
  */
 /*
 Optionally control the opacity of the HTML color backgrounds
 ( Set it to 1 for no opacity change )
+*/
+/**
+ * Variables
+ */
+/* mobile options
+$container-pad-tablet: 0 ($baseline * .75);
+$container-pad-mobile: 0 ($baseline * .5);
 */
 /**
  * HTML5 Reset
@@ -134,7 +134,12 @@ a {
   letter-spacing: inherit;
   text-decoration: none;
   cursor: pointer;
-  color: inherit; }
+  color: #01FF70; }
+  a:visited {
+    color: #01FF70; }
+  a:hover, a:active, a:focus {
+    color: #9affc6;
+    text-decoration: none; }
 
 /**
  * Grid
@@ -277,7 +282,7 @@ And the option to mute them with a mixin, just to dial down the value slightly
 .bg-teal {
   background-color: rgba(57, 204, 204, 0.75); }
 
-.bg-olive {
+.bg-olive, .container--footer {
   background-color: rgba(61, 153, 112, 0.75); }
 
 .bg-green {
@@ -322,8 +327,23 @@ And the option to mute them with a mixin, just to dial down the value slightly
   color: #fff !important; }
 
 /**
+ * Utilities
+ */
+.align--left {
+  text-align: left; }
+
+.align--right {
+  text-align: right; }
+
+.align--center {
+  text-align: center; }
+
+/**
  * Customizations
  */
+.container--footer .fa {
+  margin: 0 .5rem; }
+
 /*
 Customize the .grid__col-- div slightly if there's a .cmbox inside of it, 
 to help with vertical middle-alignment
@@ -342,3 +362,7 @@ to help with vertical middle-alignment
     .cmbox__intro-title,
     .cmbox__intro-subtitle {
       margin: 0 auto; } }
+
+.container--footer {
+  padding: 4rem 0;
+  color: white; }

@@ -2,6 +2,12 @@
  * Customizations
  */
 
+// ----------- demo only
+
+.container--footer .fa {
+  margin: 0 .5rem;
+}
+
 // ----------- Some .cmbox customizations
 
 /*
@@ -31,4 +37,14 @@ to help with vertical middle-alignment
 
 }
 
+// ----------- Footer
+
+.container--footer {
+  @extend .bg-olive;
+  padding: 4rem 0;
+  color: white;
+}
+
 // ----------- Add more customizations here
+
+

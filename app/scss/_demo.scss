@@ -1,0 +1,20 @@
+/**
+ * Customizations for the demo at: http://simplr.elmnt.com
+ */
+
+.container--header,
+.container--footer {
+  background-color: $color-olive;
+  color: white;
+}
+
+.container--footer {
+  padding: 4rem 0;
+}
+
+.container--footer .fa {
+  margin: 0 .5rem;
+}
+
+.intro__title { margin: 3rem auto 1rem auto; }
+.intro__subtitle { margin: 1rem auto 3rem auto; }

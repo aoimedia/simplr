@@ -1,13 +1,11 @@
 /**
- * Mixins
- */
-/*
-Optionally control the opacity of the HTML color backgrounds
-( Set it to 1 for no opacity change )
-*/
-/**
  * Variables
  */
+/* 
+Some colors from "Smarter defaults for colors on the web,"
+just for the demo at: http://simplr.elmnt.com
+Credit: Adam Morse (mrmrs): https://github.com/mrmrs/colors
+*/
 /* mobile options
 $container-pad-tablet: 0 ($baseline * .75);
 $container-pad-mobile: 0 ($baseline * .5);
@@ -68,7 +66,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #999;
+  background-color: white;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5em;
@@ -230,7 +228,8 @@ credit: http://joshnh.com/weblog/creating-lightweight-grid-system/
   .grid [class*="grid__col--"]:last-of-type > .content {
     padding-right: 0; } }
 
-/* Access the internal grids
+/* Access the internal grids when nesting
+
 [class*="grid__col--"] > .content {
   //background-color: hsla(0,0%,0%,.1);
 }
@@ -245,88 +244,6 @@ credit: http://joshnh.com/weblog/creating-lightweight-grid-system/
 }
 */
 /**
- * Center / Middle aligned content box
- */
-.cmbox {
-  width: 100%;
-  display: table;
-  text-align: center;
-  background-color: transparent;
-  padding: 0;
-  margin: 2rem auto; }
-
-.cmbox__content {
-  margin: 0;
-  padding: 0;
-  display: table-cell;
-  vertical-align: middle; }
-
-/**
- * Colors
- */
-/* 
-Just for fun, we're adding the mrmrs accessible web colors:
-Credit: https://github.com/mrmrs/colors
-And the option to mute them with a mixin, just to dial down the value slightly 
-( NOTE: this, of course, affects accessibility, so use the mixin wisely )
-*/
-.bg-navy {
-  background-color: rgba(0, 31, 63, 0.75); }
-
-.bg-blue {
-  background-color: rgba(0, 116, 217, 0.75); }
-
-.bg-aqua {
-  background-color: rgba(127, 219, 255, 0.75); }
-
-.bg-teal {
-  background-color: rgba(57, 204, 204, 0.75); }
-
-.bg-olive, .container--footer {
-  background-color: rgba(61, 153, 112, 0.75); }
-
-.bg-green {
-  background-color: rgba(46, 204, 64, 0.75); }
-
-.bg-lime {
-  background-color: rgba(1, 255, 112, 0.75); }
-
-.bg-yellow {
-  background-color: rgba(255, 220, 0, 0.75); }
-
-.bg-orange {
-  background-color: rgba(255, 133, 27, 0.75); }
-
-.bg-red {
-  background-color: rgba(255, 65, 54, 0.75); }
-
-.bg-maroon {
-  background-color: rgba(133, 20, 75, 0.75); }
-
-.bg-fuchsia {
-  background-color: rgba(240, 18, 190, 0.75); }
-
-.bg-purple {
-  background-color: rgba(177, 13, 201, 0.75); }
-
-.bg-black {
-  background-color: rgba(17, 17, 17, 0.75); }
-
-.bg-gray {
-  background-color: rgba(170, 170, 170, 0.75); }
-
-.bg-silver {
-  background-color: rgba(221, 221, 221, 0.75); }
-
-[class*="bg-"] h1,
-[class*="bg-"] h2,
-[class*="bg-"] h3,
-[class*="bg-"] h4,
-[class*="bg-"] h5,
-[class*="bg-"] h6 {
-  color: #fff !important; }
-
-/**
  * Utilities
  */
 .align--left {
@@ -339,30 +256,21 @@ And the option to mute them with a mixin, just to dial down the value slightly
   text-align: center; }
 
 /**
- * Customizations
+ * Customizations for the demo at: http://simplr.elmnt.com
  */
+.container--header,
+.container--footer {
+  background-color: #3D9970;
+  color: white; }
+
+.container--footer {
+  padding: 4rem 0; }
+
 .container--footer .fa {
   margin: 0 .5rem; }
 
-/*
-Customize the .grid__col-- div slightly if there's a .cmbox inside of it, 
-to help with vertical middle-alignment
-*/
-.grid__col--cmbox {
-  vertical-align: middle !important; }
+.intro__title {
+  margin: 3rem auto 1rem auto; }
 
-.grid__col--cmbox .content {
-  padding-left: 0;
-  padding-right: 0; }
-
-.cmbox__intro-title,
-.cmbox__intro-subtitle {
-  margin: 8rem auto; }
-  @media all and (max-width: 800px) {
-    .cmbox__intro-title,
-    .cmbox__intro-subtitle {
-      margin: 0 auto; } }
-
-.container--footer {
-  padding: 4rem 0;
-  color: white; }
+.intro__subtitle {
+  margin: 1rem auto 3rem auto; }

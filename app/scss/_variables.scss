@@ -2,17 +2,21 @@
  * Variables
  */
 
+// ----------- colors
+
+/* 
+Some colors from "Smarter defaults for colors on the web,"
+just for the demo at: http://simplr.elmnt.com
+Credit: Adam Morse (mrmrs): https://github.com/mrmrs/colors
+*/
+
+$color-olive: #3D9970;
+$color-lime: #01FF70;
+
 // ----------- base.scss
 
 $html-font-size: 16px;
 $baseline: 1rem;
-
-// This light grey BG works with the mutebg mixin
-// to adjust the value of color BGs.
-// .container BG must be set to white, so all page "body"
-// area will be white.
-
-$base-background-color: #999;
 
 // Google fonts used: Lato: 400/700
 
@@ -20,7 +24,7 @@ $base-color: #333;
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
 
 // chosen link color (from _colors.scss)
-$link-color: #01FF70; // lime
+$link-color: $color-lime;
 
 $base-font-size: 1.25rem;
 $base-line-height: 1.5em;

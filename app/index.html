@@ -11,7 +11,7 @@
 <meta name="author" content="author">
 <meta name="robots" content="index, nofollow">
 
-<!-- load google fonts & fa icons for this demo -->
+<!-- load google fonts & fa icons for the demo -->
 <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -22,83 +22,20 @@
 </head>
 <body>
 
-<!-- Some BEM stying advice & examples 
-
-<style type="text/css">
-
-.special__container {}
-/*
-We can target the .wrap, .grid, .grid__col and content divs via that container class.
-Since they're meant to be global, we shouldn't change their styles often, other than to add BG colors.
-We'll want to put custom classes INSIDE them. Always try to leave the framework alone.
-*/
-
-.special__form-holder {}
-.special__form {}
-.special__label {}
-.special__input {}
-.special__input--text {}
-.special__input--email {}
-.special__button {}
-
-</style>
-
-<div class="container special__container">
-<div class="wrap">
+<header>
+<div class="container container--header">
+<div class="wrap--single">
 <div class="grid">
 
-  <div class="grid__col--50">
-    <div class="content">
-      <div class="special__form-holder">
-        <form class="special__form">
-          <label for="yourname" class="special__label">Name</label>
-          <input id="yourname" name="yourname" type="text" class="special__input--text">
-          <label for="youremail" class="special__label">Email</label>
-          <input id="youremail" name="youremail" type="text" class="special__input--email">
-          <input type="submit" class="button special__button" value="Send My Message">
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="grid__col--50">
-    <div class="content">
-      <p class="container-special__intro">Basic</p>
-    </div>
-  </div>
-
-</div>
-</div>
-</div>
--->
-
-
-
-<div class="container bg-olive">
-<div class="wrap">
-<div class="grid">
-
-  <div class="grid__col--30 grid__col--cmbox">
-  <div class="content">
-    <div class="cmbox">
-    <div class="cmbox__content">
-      <h1 class="cmbox__intro-title">simplr</h1>
-    </div>
-    </div>
-  </div>
-  </div><!--
-  --><div class="grid__col--70 grid__col--cmbox">
-  <div class="content">
-    <div class="cmbox">
-    <div class="cmbox__content">
-      <h4 class="cmbox__intro-subtitle">An ultra-minimal no-float grid system &amp; typography starter kit with a minified build CSS file of just 4KB.</h4>
-    </div>
-    </div>
-  </div>
+  <div class="content align--center">
+    <h1 class="intro__title">simplr</h1>
+    <h4 class="intro__subtitle">A lightweight, no-float grid &amp; typography starter kit with a minified build CSS file of just 3KB.</h4>
   </div>
 
 </div><!-- /.grid -->
 </div><!-- /.wrap -->
 </div><!-- /.container -->
+</header>
 
 <!-- type -->
 

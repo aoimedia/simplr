@@ -97,7 +97,8 @@ credit: http://joshnh.com/weblog/creating-lightweight-grid-system/
 
 }//@media
 
-/* Access the internal grids
+/* Access the internal grids when nesting
+
 [class*="grid__col--"] > .content {
   //background-color: hsla(0,0%,0%,.1);
 }

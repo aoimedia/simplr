@@ -6,10 +6,6 @@ Some colors from "Smarter defaults for colors on the web,"
 just for the demo at: http://simplr.elmnt.com
 Credit: Adam Morse (mrmrs): https://github.com/mrmrs/colors
 */
-/* mobile options
-$container-pad-tablet: 0 ($baseline * .75);
-$container-pad-mobile: 0 ($baseline * .5);
-*/
 /**
  * HTML5 Reset
  */
@@ -30,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0;
   border: 0; }
 
-/* ol, ul { list-style: none; } */
+/* ol, ul { list-style: none; } I prefer a utility class for this. Leave the defaults alone. */
 blockquote, q {
   quotes: none; }
 
@@ -88,7 +84,7 @@ h6 {
   font-style: normal;
   letter-spacing: 0.025em;
   line-height: 1.35em;
-  margin: 0 0 0.5rem 0; }
+  margin: 1rem 0; }
 
 h1 {
   font-size: 40px;
@@ -255,22 +251,29 @@ credit: http://joshnh.com/weblog/creating-lightweight-grid-system/
 .align--center {
   text-align: center; }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 /**
  * Customizations for the demo at: http://simplr.elmnt.com
  */
 .container--header,
 .container--footer {
+  padding: 6rem 0;
   background-color: #3D9970;
   color: white; }
-
-.container--footer {
-  padding: 4rem 0; }
+  @media all and (max-width: 800px) {
+    .container--header,
+    .container--footer {
+      padding: 2rem 0; } }
 
 .container--footer .fa {
   margin: 0 .5rem; }
 
 .intro__title {
-  margin: 3rem auto 1rem auto; }
+  margin: 0 auto; }
 
 .intro__subtitle {
-  margin: 1rem auto 3rem auto; }
+  margin: 1rem auto 0 auto; }

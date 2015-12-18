@@ -19,7 +19,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   padding: 0; 
   border: 0; 
 }
-/* ol, ul { list-style: none; } */
+/* ol, ul { list-style: none; } I prefer a utility class for this. Leave the defaults alone. */
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }

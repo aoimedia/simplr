@@ -1,12 +1,4 @@
 /**
- * Variables
- */
-/* 
-Some colors from "Smarter defaults for colors on the web,"
-just for the demo at: http://simplr.elmnt.com
-Credit: Adam Morse (mrmrs): https://github.com/mrmrs/colors
-*/
-/**
  * HTML5 Reset
  */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -39,6 +31,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/**
+ * Variables
+ */
+/* 
+Some colors from "Smarter defaults for colors on the web,"
+just for the demo at: http://simplr.elmnt.com
+Credit: Adam Morse (mrmrs): https://github.com/mrmrs/colors
+*/
 /**
  * Base
  */

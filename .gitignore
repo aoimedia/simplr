@@ -7,5 +7,5 @@ Thumbs.db
 *.settings
 
 # nitty-gritty
-/dist
+# /dist // leaving this out to push demo via beanstalk
 /node_modules

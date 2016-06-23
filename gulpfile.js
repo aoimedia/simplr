@@ -9,6 +9,7 @@ var gulpIf = require('gulp-if');
 var minifyCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var gzip = require('gulp-gzip');
 var del = require('del');
 var runSequence = require('run-sequence');
 
@@ -59,7 +60,6 @@ gulp.task('default', ['browserSync', 'sass'], function (){
 
 gulp.task('useref', function(){
   var assets = useref.assets();
-
   return gulp.src('app/*.html')
     .pipe(assets)
     // Minifies only if it's a CSS file
@@ -68,6 +68,7 @@ gulp.task('useref', function(){
     .pipe(gulpIf('*.js', uglify()))
     .pipe(assets.restore())
     .pipe(useref())
+    .pipe(gzip())
     .pipe(gulp.dest('dist'))
 });
 
